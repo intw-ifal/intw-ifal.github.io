@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="estilo.css">
       </head>
 
-<body bgcolor="red">
+<body>
 <center>
 <br><br><br><br>
 <h1>Site do projeto da disciplina e INTW....</h1>
@@ -28,7 +28,7 @@
     </tr>
   </table>
 
-  <form action="onClick(alert('teste'));">
+  <form>
     <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome">
     <label for="periodo">Qual período:</label>
@@ -36,7 +36,8 @@
         <option value="1º Período">1º Período</option>
         <option value="2º Período">2º Período</option>      
     </select>
-      </form>
+    <input type="submit" onclick="alert('teste');">
+    </form>
 </center>
 </body>
 </html>
