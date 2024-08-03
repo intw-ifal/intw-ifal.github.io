@@ -1,7 +1,17 @@
 <html>
     <head>
-        <title>Site da disciplina INTW</title>
+        <title>Site da disciplina INTW</title>        
         <link rel="stylesheet" href="estilo.css">
+        <script>
+          function verifica(nome, periodo) {
+            if (periodo == '1º Período'){
+              alert('Parabéns pela recente aprovação!!')      
+            }else{
+              alert('Continue firme!!!')
+            }
+          }          
+        </script>
+//alert(document.getElementById('nome').value+' é '+document.getElementById('periodo').value+' período!');        
       </head>
 
 <body>
@@ -36,7 +46,7 @@
         <option value="1º Período">1º Período</option>
         <option value="2º Período">2º Período</option>      
     </select>
-    <input type="submit" onclick="alert(document.getElementById('nome').value+' é '+document.getElementById('periodo').value+' período!');">    
+    <input type="submit" onclick="verifica(document.getElementById('nome').value,document.getElementById('periodo').value)">    
     </form>
 </center>
 </body>
