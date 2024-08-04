@@ -7,6 +7,7 @@
             var msg="";
             if (nome==''){
               alert("Digite um valor para Nome!");
+              document.form.getElementById('formulario').focus();
               return false;
             }
             switch(periodo) {
@@ -52,7 +53,7 @@
     </tr>
   </table>
 <br><br>
-  <form>
+  <form id="formulario">
     <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome">
     <label for="linguagem">Opção de Linguagem: </label>
