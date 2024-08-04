@@ -5,6 +5,10 @@
         <script>
           function verifica(nome, periodo) {
             var msg="";
+            if (nome==''){
+              alert("Digite um valor para Nome!");
+              return false;
+            }
             switch(periodo) {
               case 1:
                 msg = "C";
