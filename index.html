@@ -5,12 +5,20 @@
         <script>
           function verifica(nome, periodo) {
             var msg="";
-            if (periodo == '1º Período'){
-              msg = ", Parabéns pela recente aprovação!!";
-            }else{
-              msg= ", continue firme!!!";
+            switch(periodo) {
+              case 1:
+                msg = "C";
+                break;
+              case 2:
+                msg= "Python";  
+                break;
+              case 3:
+                msg= "JS";  
+                break;
+              default:
+                msg= "nenhuma";    
             }
-            return alert(nome+msg);
+            return alert('Linguagem selecionada pelo '+nome+' foi '+msg);
           }      
 //alert(document.getElementById('nome').value+' é '+document.getElementById('periodo').value+' período!');                      
         </script>
@@ -43,12 +51,14 @@
   <form>
     <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome">
-    <label for="periodo">Qual período:</label>
-      <select id="periodo" name="periodo">
-        <option value="1º Período">1º Período</option>
-        <option value="2º Período">2º Período</option>      
+    <label for="linguagem">Opção de Linguagem: </label>
+      <select id="linguagem" name="linguagem">
+        <option value="0">Selecione:</option>
+        <option value="1">C</option>
+        <option value="2">Python</option>
+        <option value="3">JS</option>        
     </select>
-    <input type="submit" onclick="verifica(document.getElementById('nome').value,document.getElementById('periodo').value)">    
+    <input type="submit" onclick="verifica(document.getElementById('nome').value,document.getElementById('linguagem').value)">    
     </form>
 </center>
 </body>
