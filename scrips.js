@@ -6,7 +6,7 @@ function PreferenciaLinguagem(nome, linguagem) {
     var nome, lp='';
     if (nome==''){
         alert('É preciso inserir algum nome!');
-        document.getElementById('nome').focus();
+        document.getElementById("nome").focus();
         return false;
     }
     switch(linguagem) {
