@@ -3,14 +3,14 @@
         <title>Site da disciplina INTW</title>        
         <link rel="stylesheet" href="estilo.css">
         <script>
-          function verifica(nome, periodo) {
+          function verifica(nome, linguagem) {
             var msg="";
             if (nome==''){
               alert("Digite um valor para Nome!");
               document.form.getElementById('formulario').focus();
               return false;
             }
-            switch(periodo) {
+            switch(linguagem) {
               case 1:
                 msg = "C";
                 break;
