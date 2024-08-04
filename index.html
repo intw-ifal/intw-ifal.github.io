@@ -7,9 +7,8 @@
             var msg="";
             if (nome==''){
               alert("Digite um valor para Nome!");
-//              document.getElementById('nome').focus();
-              return false;
               document.getElementById('nome').focus();
+              return false;
             }
             switch(linguagem) {
               case '1':
@@ -64,7 +63,7 @@
         <option value="2">Python</option>
         <option value="3">JS</option>        
     </select>
-    <input type="submit" onclick="verifica(document.getElementById('nome').value,document.getElementById('linguagem').value)">    
+    <input type="button" onclick="verifica(document.getElementById('nome').value,document.getElementById('linguagem').value)" value="Enviar">    
     </form>
 </center>
 </body>
