@@ -4,11 +4,13 @@
         <link rel="stylesheet" href="estilo.css">
         <script>
           function verifica(nome, periodo) {
+            var msg="";
             if (periodo == '1º Período'){
-              alert(nome+', Parabéns pela recente aprovação!!')      
+              msg = ", Parabéns pela recente aprovação!!";
             }else{
-              alert(nome+', continue firme!!!')
+              msg= ", continue firme!!!";
             }
+            return alert(nome+msg);
           }      
 //alert(document.getElementById('nome').value+' é '+document.getElementById('periodo').value+' período!');                      
         </script>
