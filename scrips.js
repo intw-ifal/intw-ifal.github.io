@@ -6,7 +6,7 @@ function PreferenciaLinguagem(nome, linguagem) {
     var nome, lp='';
     if (nome==''){
         alert('É preciso inserir algum nome!');
-        nome.focus();
+        document.getElementById('nome').focus();
         return false;
     }
     switch(linguagem) {
@@ -22,6 +22,6 @@ function PreferenciaLinguagem(nome, linguagem) {
         default:
         lp = 'NENHUMA!'
       }
-      return alert('Linguagem selecionada por '+nome+' foi '+lp);
+      return alert('Linguagem selecionada por '+nome+' foi '+lp)
 }
 
