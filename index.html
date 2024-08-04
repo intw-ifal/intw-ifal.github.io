@@ -2,6 +2,11 @@
     <head>
         <title>Site da disciplina INTW</title>        
         <link rel="stylesheet" href="estilo.css">
+        <script>
+          function Bemvindo(nome) {
+            return alert('Bem-vindo, saudações '+nome);
+          }
+        </script>
 
       </head>
 
@@ -32,7 +37,7 @@
   <form name="formulario">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome">
-    <input type="button" id="enviar" value="Enviar" onclick="alert('Bem-vindo, '+document.getElementById('nome').value)">
+    <input type="button" id="enviar" value="Enviar" onclick="Bemvindo(document.getElementById('nome').value)">
   </form>
 
 </center>
