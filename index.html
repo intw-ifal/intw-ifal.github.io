@@ -32,8 +32,15 @@
   <br><br>
   <form name="formulario">
     <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome">
-    <input type="button" id="enviar" value="Enviar" onclick="Bemvindo(document.getElementById('nome').value)">
+    <input type="text" id="nome" name="nome">    
+    <label for="linguagem">Escolha uma Linguagem:</label>
+    <select id="linguagem" name="linguagem">
+      <option value="0">Selecione:</option>
+      <option value="1">C</option>
+      <option value="2">Python</option>
+      <option value="3">JS</option>
+    </select>    
+    <input type="button" id="enviar" value="Enviar" onclick="PreferenciaLinguagem(document.getElementById('nome').value,document.getElementById('linguagem').value)">
   </form>
 
 </center>
