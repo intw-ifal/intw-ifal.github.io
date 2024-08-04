@@ -2,31 +2,6 @@
     <head>
         <title>Site da disciplina INTW</title>        
         <link rel="stylesheet" href="estilo.css">
-        <script>
-          function verifica(nome, linguagem) {
-            var msg="";
-            if (nome==''){
-              alert("Digite um valor para Nome!");
-              document.getElementById('nome').focus();
-              return false;
-            }
-            switch(linguagem) {
-              case '1':
-                msg = "C";
-                break;
-              case '2':
-                msg= "Python";  
-                break;
-              case '3':
-                msg= "JS";  
-                break;
-              default:
-                msg= "nenhuma";    
-            }
-            return alert('Linguagem selecionada pelo '+nome+' foi '+msg);
-          }      
-//alert(document.getElementById('nome').value+' é '+document.getElementById('periodo').value+' período!');                      
-        </script>
       </head>
 
 <body>
@@ -52,19 +27,6 @@
       <td>Mexico</td>
     </tr>
   </table>
-<br><br>
-  <form id="formulario">
-    <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome">
-    <label for="linguagem">Opção de Linguagem: </label>
-      <select id="linguagem" name="linguagem">
-        <option value="0">Selecione:</option>
-        <option value="1">C</option>
-        <option value="2">Python</option>
-        <option value="3">JS</option>        
-    </select>
-    <input type="button" onclick="verifica(document.getElementById('nome').value,document.getElementById('linguagem').value)" value="Enviar">    
-    </form>
 </center>
 </body>
 </html>
