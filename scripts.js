@@ -1,3 +1,10 @@
-    function VerificarNome(nome, sobrenome){ 
-      return alert('Nome inserido pela Via externa: '+nome+' '+sobrenome);
+    function VerificarNome(nome, sobrenome,lp){ 
+      
+    if (lp == 0) {
+        alert('Selecione um linguagem!');
+        return false;
+    }else{
+        return alert('Nome inserido pela Via externa: '+nome+' '+sobrenome+' selecionou a LP: '+lp);
+    }
+      
     }

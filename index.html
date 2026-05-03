@@ -39,7 +39,14 @@
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Sobrenome: </label><br>
   <input type="text" id="lname" name="lname">
-  <input type="button" value="Verificar" onclick="VerificarNome(document.getElementById('fname').value,document.getElementById('lname').value)">
+  <label for="cars">Choose a car:</label>
+<select id="lp" name="lp">
+  <option value="0">Selecione uma LP:</option>
+  <option value="1">C</option>
+  <option value="2">Python</option>
+  <option value="3">Javascript</option>
+</select>
+  <input type="button" value="Verificar" onclick="VerificarNome(document.getElementById('fname').value,document.getElementById('lname').value,document.getElementById('lp').value)">
 </form>    
 
 </center>
