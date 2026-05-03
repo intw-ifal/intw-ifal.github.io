@@ -32,18 +32,19 @@
   </tr>
 
 </table>
-   
+   <br><br>
 <form>
   <label for="nome">Nome:</label><br>
   <input type="text" id="nome" name="nome"><br>
-  <br>
+  <br><br>
+  
   <input type="radio" id="fav_language" name="fav_language" value="HTML">
   <label for="html">HTML</label><br>
   <input type="radio" id="fav_language" name="fav_language" value="CSS">
   <label for="css">CSS</label><br>
   <input type="radio" id="fav_language" name="fav_language" value="JavaScript">
   <label for="javascript">JavaScript</label>
-  <br>
+  <br><br>
   <label for="periodo">Selecione o período atual: </label>
   <select id="periodo" name="periodo">
     <option value="1">1º Período:</option>
@@ -51,7 +52,8 @@
     <option value="3">3º Período:</option>
     <option value="4">4º Período:</option>
   </select>
-  <button type="button" onclick="alert(document.getElementById('nome').value+' '+document.getElementById('fav_language')+' '+document.getElementById('periodo').value)">Verificar</button>
+  <br><br>
+  <button type="button" onclick="alert(document.getElementById('nome').value+' '+document.getElementById('fav_language').value+' '+document.getElementById('periodo').value)">Verificar</button>
 </form>
 
 </center>
