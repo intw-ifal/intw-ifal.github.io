@@ -2,6 +2,11 @@
 <head>
   <title>Site do projeto da disciplina INTW.</title>
   <link rel="stylesheet" href="estilo.css">
+  <script>
+    function VerificarNome(nome, sobrenome){ 
+      return alert('Nome inserido: '+nome+' '+sobrenome);
+    }
+  </script>
 </head>
 <body bgcolor="green">
   <center>
@@ -38,7 +43,7 @@
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Sobrenome: </label><br>
   <input type="text" id="lname" name="lname">
-  <input type="button" value="Verificar" onclick="alert('Nome inserido: '+document.getElementById('fname').value+' '+document.getElementById('lname').value)">
+  <input type="button" value="Verificar" onclick="VerificarNome(document.getElementById('fname').value,document.getElementById('lname').value)">
 </form>    
 
 </center>
