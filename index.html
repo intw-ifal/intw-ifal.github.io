@@ -2,6 +2,7 @@
 <head>
   <title>Site do projeto da disciplina INTW.</title>
   <link rel="stylesheet" href="estilo.css">
+  <script src="script.js"></script>
 </head>
 <body bgcolor="green">
   <center>
@@ -54,7 +55,7 @@
     <option value="3">3º Período</option>
   </select>
 <br><br>
-<button type="button" onclick="alert('Aluno: '+document.getElementById('nome').value+' \n '+document.getElementById('fav_lp').value+' \n '+document.getElementById('periodo').value)">Verifica</button>
+<button type="button" onclick="verifica(document.getElementById('nome').value,document.getElementById('fav_lp').value,document.getElementById('periodo').value)">Verifica</button>
 
 </form>
 </center>
